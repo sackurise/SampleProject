@@ -21,6 +21,18 @@
         <activity
             android:name=".SecondActivity"
             android:label="@string/title_activity_second"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ThirdActivity"
+            android:label="@string/title_activity_third_activity_drawer_layout"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeSlidingViewPager"
+            android:label="@string/title_activity_view_pager"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivityDemo"
+            android:label="@string/title_activity_main_activity_demo"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

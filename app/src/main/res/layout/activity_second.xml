@@ -18,11 +18,12 @@
             android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
             android:fitsSystemWindows="true"
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginStart="48dp"
-            app:expandedTitleMarginEnd="64dp">
+            app:expandedTitleMarginEnd="64dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:layout_behavior="">
 
             <ImageView
                 android:id="@+id/backdrop"
@@ -40,7 +41,6 @@
                 app:layout_collapseMode="pin" />
 
         </android.support.design.widget.CollapsingToolbarLayout>
-
     </android.support.design.widget.AppBarLayout>
 
     <android.support.design.widget.FloatingActionButton
@@ -49,6 +49,26 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_email" />
+        android:src="@android:drawable/ic_dialog_email"/>
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:id="@+id/animimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/anim_cheese"
+        android:layout_gravity="center_horizontal"/>
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="male"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="female"/>
+</RadioGroup>
 
 </android.support.design.widget.CoordinatorLayout>
